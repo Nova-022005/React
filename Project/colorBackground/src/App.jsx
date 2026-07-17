@@ -1,13 +1,17 @@
-import { useState } from 'react'
+import { use, useState } from 'react'
 import './App.css'
-
+import '/components/color'
+import './Password'
+import Color from '../components/color'
+import Password from './Password'
 function App() {
+  const [color, setColor] = useState("olive");
   return (
-    <div className="flex items-center justify-center h-screen bg-blue-100">
-      <h1 className="text-4xl font-bold text-blue-600 underline">
-        Tailwind CSS is working!
-      </h1>
-    </div>
+    <>
+      {/* <Color /> */}
+      <Password />
+    </>
+
   )
 }
 
