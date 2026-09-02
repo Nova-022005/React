@@ -26,3 +26,19 @@ This allows the lowest-level component (e.g., Card) to directly access the props
 * React-Redux
 
 * Redux-Toolkit(RTK)
+
+
+
+### Context-API
+
+``` javascript
+// store createContext
+
+const User=React.createContext();
+
+// export 
+
+export default UserContext;
+```
+
+now every context is a provider so as UserContext.So, end of the day we will use it as a wrapper.

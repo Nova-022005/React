@@ -1,13 +1,12 @@
-import { useState } from 'react'
+import UserContextProvider from "../context/UserContextProvider"
 
-import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-  <>
-  </>
+  <UserContextProvider U>
+  <h2>Let's learn state management in React starting with Context-API</h2>
+  </UserContextProvider>
   )
 }
 
